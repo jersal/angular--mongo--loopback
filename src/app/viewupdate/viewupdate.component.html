@@ -1,3 +1,37 @@
 <p>
   viewupdate works!
 </p>
+<p>
+  register works!
+</p>
+
+
+<div class="container" align="center">
+  <label><b>NAME :</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Enter Your Name" [(ngModel)]="name" required><br><br>
+
+  <label><b>E-MAIL :</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Enter Your email id"[(ngModel)]="email" required><br><br>
+
+  <label><b>MOBILE NUMBER :</b></label>
+  <input type="text" placeholder="Enter Your Mobile Number" [(ngModel)]="phone" required><br><br>
+
+
+  <label><b>Username :</b></label>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Enter Your Username" [(ngModel)]="usrname" required><br><br>
+
+  <label><b>Password :</b></label>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Enter Your password"[(ngModel)]="password" required><br>
+
+
+  <button type="submit" (click)="myEvent($event)">REGISTER</button>
+  <button type="reset" >CANCEL</button>
+</div>

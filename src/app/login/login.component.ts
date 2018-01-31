@@ -14,6 +14,7 @@ usrname:string='';
 password='';
 
   constructor(private http:Http, private routes:RouterModule) {
+//in database-->collection name==detailsview
 
    var log=sessionStorage.getItem('detailsview');
 

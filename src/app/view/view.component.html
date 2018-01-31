@@ -1,3 +1,31 @@
 <p>
   view works!
 </p>
+
+
+
+<p>
+  register works!
+</p>
+
+
+<div class="container" align="center">
+
+<table class="table">
+  <thead>
+  <tr><th>NAME</th><th>EMAIL</th><th>PHONE</th><th>USERNAME</th></tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let v of result">
+      <td>{{v.name}}</td>
+    <td>{{v.email}}</td>
+    <td>{{v.phone}}</td>
+    <td>{{v.usrname}}</td>
+
+    <td>  <button value="edit" (click)="showEdit(v.id)">EDIT</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
